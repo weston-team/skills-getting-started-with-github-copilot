@@ -154,8 +154,8 @@ footer {
 }
 
 .participants-list {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -165,9 +165,29 @@ footer {
   background: linear-gradient(90deg, #ffffff, #fbfbff);
   border: 1px solid #eee;
   border-radius: 6px;
-  display: list-item; /* keep bullet alignment */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #333;
   font-size: 14px;
+}
+
+.participant-email {
+  overflow-wrap: anywhere;
+}
+
+.remove-participant {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #c62828;
+  font-size: 16px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.remove-participant:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 /* lightweight no-participants hint */
